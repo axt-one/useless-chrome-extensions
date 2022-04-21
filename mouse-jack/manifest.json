@@ -1,0 +1,17 @@
+{
+    "name": "Mouse Jack",
+    "version": "0.0.1",
+    "manifest_version": 3,
+    "description": "Your Mouse is Mine.",
+    "permissions": [
+    ],
+    "icons": {
+    },
+    "content_scripts": [{
+        "matches": ["<all_urls>"],
+        "js": [
+            "content.js"
+        ],
+        "all_frames": true
+    }]
+}
