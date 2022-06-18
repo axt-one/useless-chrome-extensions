@@ -13,5 +13,15 @@
                 "content.js"
             ]
         }
+    ],
+    "web_accessible_resources": [
+        {
+            "resources": [
+                "/resources/*"
+            ],
+            "matches": [
+                "<all_urls>"
+            ]
+        }
     ]
 }
