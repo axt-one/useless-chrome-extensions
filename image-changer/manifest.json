@@ -1,0 +1,17 @@
+{
+    "name": "Image Changer",
+    "version": "0.0.1",
+    "manifest_version": 3,
+    "description": "Replace All Images on Any Websites",
+    "permissions": [],
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "js": [
+                "content.js"
+            ]
+        }
+    ]
+}
