@@ -4,7 +4,7 @@ const imgFiles = [
 ];
 
 function replaceImage() {
-    const elements = document.querySelectorAll('img');
+    const elements = document.getElementsByTagName('img');
     for (const e of elements) {
         let i = Math.floor(Math.random() * imgFiles.length);
         let imgURL = chrome.runtime.getURL(imgFiles[i]);
