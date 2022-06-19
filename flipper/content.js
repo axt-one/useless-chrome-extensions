@@ -51,3 +51,13 @@ window.addEventListener('load', () => {
     const elements = document.body.children;
     flipper(elements);
 });
+
+const observer = new MutationObserver(() => {
+    const elements = document.body.children;
+    flipper(elements);
+});
+
+observer.observe(document, {
+    subtree: true,
+    childList: true
+});
